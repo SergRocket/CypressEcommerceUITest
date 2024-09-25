@@ -1,0 +1,187 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-09-23T12:08:05.247Z",
+    "end": "2024-09-23T12:08:47.155Z",
+    "duration": 41908,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d45f16e6-27f5-48e0-bc2c-9e7bfdedfeb9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\userTests.cy.js",
+      "file": "cypress\\e2e\\userTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4f1d5f2-0726-4aa7-b7d0-71f93c14c248",
+          "title": "Tests for user login/logout and add item to the bucket",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User login verification positive",
+              "fullTitle": "Tests for user login/logout and add item to the bucket User login verification positive",
+              "timedOut": null,
+              "duration": 10022,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.loginToAccount();",
+              "err": {},
+              "uuid": "d95ec80c-9acb-4093-b90d-24aa06be7b03",
+              "parentUUID": "a4f1d5f2-0726-4aa7-b7d0-71f93c14c248",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User logout verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket User logout verification",
+              "timedOut": null,
+              "duration": 8161,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.logoutFromAccount();",
+              "err": {},
+              "uuid": "0e9725c8-103f-43ad-99c7-7ccabe9c2214",
+              "parentUUID": "a4f1d5f2-0726-4aa7-b7d0-71f93c14c248",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Contact info verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Contact info verification",
+              "timedOut": null,
+              "duration": 1450,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.vefiryTelValueOnMainPage();\naccountPage.vefirySckedulerValuesOnMainPage();",
+              "err": {},
+              "uuid": "d171cca0-7b14-496b-9684-d17652ccf266",
+              "parentUUID": "a4f1d5f2-0726-4aa7-b7d0-71f93c14c248",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Prices values and currency test verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Prices values and currency test verification",
+              "timedOut": null,
+              "duration": 12507,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.verfiyOldPriceValues();\naccountPage.verfiyNewPriceValues();\naccountPage.verfiyOldAndNewPriceValues();",
+              "err": {},
+              "uuid": "b772536c-fa19-4af2-9405-bb837511b23e",
+              "parentUUID": "a4f1d5f2-0726-4aa7-b7d0-71f93c14c248",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sorting verification tests",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Sorting verification tests",
+              "timedOut": null,
+              "duration": 9248,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.sortingSelection();\naccountPage.selectRandomSortingOption();",
+              "err": {
+                "message": "AssertionError: expected undefined to be a number or a date",
+                "estack": "AssertionError: expected undefined to be a number or a date\n    at Context.eval (webpack://e-commerceuitests/./cypress/support/pageObjects/accountPage.js:149:20)",
+                "diff": null
+              },
+              "uuid": "9f69d663-9d60-4d20-b242-278e53286698",
+              "parentUUID": "a4f1d5f2-0726-4aa7-b7d0-71f93c14c248",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d95ec80c-9acb-4093-b90d-24aa06be7b03",
+            "0e9725c8-103f-43ad-99c7-7ccabe9c2214",
+            "d171cca0-7b14-496b-9684-d17652ccf266",
+            "b772536c-fa19-4af2-9405-bb837511b23e"
+          ],
+          "failures": [
+            "9f69d663-9d60-4d20-b242-278e53286698"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 41388,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

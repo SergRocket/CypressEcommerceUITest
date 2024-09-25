@@ -1,0 +1,9 @@
+services:
+  e2e:
+    image: e-commerce_demo-4
+    build: . 
+    container_name: cypres_demo-4
+    command: sh -c "npm run cypress:run && npm run merge-reports && npm run generate-html-report-general"
+    volumes:
+      - C:\Users\38096\CypressProjects\E-CommerceUITests\cypress\reports:/e-commerceuitests/cypress/reports
+      - C:\Users\38096\CypressProjects\E-CommerceUITests\:/e-commerceuitests/

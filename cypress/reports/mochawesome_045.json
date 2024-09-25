@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-23T12:07:12.866Z",
+    "end": "2024-09-23T12:08:03.531Z",
+    "duration": 50665,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6009e1ca-2164-47b1-b01c-8f1a4c23e822",
+      "title": "",
+      "fullFile": "cypress\\e2e\\productPagesTests.cy.js",
+      "file": "cypress\\e2e\\productPagesTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4828c2a8-d8ba-4daf-88ae-aaa8295295b3",
+          "title": "Tests to verify product page and critical elements visibility and url value",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tests to verify product page and critical elements visibility and url value",
+              "fullTitle": "Tests to verify product page and critical elements visibility and url value Tests to verify product page and critical elements visibility and url value",
+              "timedOut": null,
+              "duration": 50540,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.searchQueries.forEach(searchQuery => {\n  searchPage.validSearchQuery(searchQuery.value);\n  productPage.openProductPage(searchQuery.value);\n  productPage.verifyElementsAreShownCorrectly(searchQuery.value);\n  productPage.verifyPricePresentCorrectly();\n  productPage.verifyProductIdSameInTitleAndUrl(searchQuery.value);\n});",
+              "err": {},
+              "uuid": "b693d3e4-79d5-42a4-8c4e-6b11c025c839",
+              "parentUUID": "4828c2a8-d8ba-4daf-88ae-aaa8295295b3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b693d3e4-79d5-42a4-8c4e-6b11c025c839"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 50540,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

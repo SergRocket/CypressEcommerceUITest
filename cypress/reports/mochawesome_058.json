@@ -1,0 +1,187 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-09-23T16:18:28.961Z",
+    "end": "2024-09-23T16:18:59.317Z",
+    "duration": 30356,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ff37cb92-9f91-4141-b6bd-3e26319941b3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\userTests.cy.js",
+      "file": "cypress\\e2e\\userTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c282c7e9-341c-4c1c-9aea-80276995d2be",
+          "title": "Tests for user login/logout and add item to the bucket",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User login verification positive",
+              "fullTitle": "Tests for user login/logout and add item to the bucket User login verification positive",
+              "timedOut": null,
+              "duration": 9810,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.loginToAccount();",
+              "err": {},
+              "uuid": "b935b7c4-0c41-464f-932b-982ea803de55",
+              "parentUUID": "c282c7e9-341c-4c1c-9aea-80276995d2be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User logout verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket User logout verification",
+              "timedOut": null,
+              "duration": 8178,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.logoutFromAccount();",
+              "err": {},
+              "uuid": "a8fadbc3-a4a4-430b-a7cc-87c681dcd834",
+              "parentUUID": "c282c7e9-341c-4c1c-9aea-80276995d2be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Contact info verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Contact info verification",
+              "timedOut": null,
+              "duration": 2395,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.vefiryTelValueOnMainPage();\naccountPage.vefirySckedulerValuesOnMainPage();",
+              "err": {},
+              "uuid": "49fe64f5-db3a-484c-96f2-05c265eb6932",
+              "parentUUID": "c282c7e9-341c-4c1c-9aea-80276995d2be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Prices values and currency test verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Prices values and currency test verification",
+              "timedOut": null,
+              "duration": 5307,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.verfiyOldPriceValues();\naccountPage.verfiyNewPriceValues();\naccountPage.verfiyOldAndNewPriceValues();",
+              "err": {
+                "message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 13 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click",
+                "estack": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 13 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://www.mariomuzi.com.ua/__cypress/runner/cypress_runner.js:112454:68)\n    at Context.click (https://www.mariomuzi.com.ua/__cypress/runner/cypress_runner.js:112621:14)\n    at wrapped (https://www.mariomuzi.com.ua/__cypress/runner/cypress_runner.js:138450:19)\nFrom Your Spec Code:\n    at AccountPage.verfiyNewPriceValues (webpack://e-commerceuitests/./cypress/support/pageObjects/accountPage.js:84:58)\n    at Context.eval (webpack://e-commerceuitests/./cypress/e2e/userTests.cy.js:24:18)",
+                "diff": null
+              },
+              "uuid": "04a0a005-5fbb-4e93-bd02-ac3c456e6c0b",
+              "parentUUID": "c282c7e9-341c-4c1c-9aea-80276995d2be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sorting verification tests",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Sorting verification tests",
+              "timedOut": null,
+              "duration": 4301,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.sortingSelection();\naccountPage.selectRandomSortingOption();",
+              "err": {},
+              "uuid": "25d2c6fb-779b-4141-b81e-61e5a516c236",
+              "parentUUID": "c282c7e9-341c-4c1c-9aea-80276995d2be",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b935b7c4-0c41-464f-932b-982ea803de55",
+            "a8fadbc3-a4a4-430b-a7cc-87c681dcd834",
+            "49fe64f5-db3a-484c-96f2-05c265eb6932",
+            "25d2c6fb-779b-4141-b81e-61e5a516c236"
+          ],
+          "failures": [
+            "04a0a005-5fbb-4e93-bd02-ac3c456e6c0b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29991,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-09-20T16:30:47.488Z",
+    "end": "2024-09-20T16:30:58.438Z",
+    "duration": 10950,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d0a58f0c-0958-49d8-961f-a4046250c5d5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\productCardstests.cy.js",
+      "file": "cypress\\e2e\\productCardstests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c7beb51-9dc9-432e-a955-2636d9720804",
+          "title": "Tests for user login and add item to the bucket",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Invalid user search tests",
+              "fullTitle": "Tests for user login and add item to the bucket Invalid user search tests",
+              "timedOut": null,
+              "duration": 8656,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "searchPage.invalidSearch();",
+              "err": {},
+              "uuid": "22929d70-f4d9-4c0a-adb3-bcae0b5dba0f",
+              "parentUUID": "7c7beb51-9dc9-432e-a955-2636d9720804",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Valid user search tests",
+              "fullTitle": "Tests for user login and add item to the bucket Valid user search tests",
+              "timedOut": null,
+              "duration": 2168,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "this.searchQueries.forEach(searchQuery => {\n  searchPage.validSearchQuery(searchQuery.value);\n});",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'forEach')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'forEach')\n    at Context.eval (webpack://e-commerceuitests/./cypress/e2e/productCardstests.cy.js:17:27)",
+                "diff": null
+              },
+              "uuid": "518d3b33-a16d-4b89-83a7-0a7130150b9a",
+              "parentUUID": "7c7beb51-9dc9-432e-a955-2636d9720804",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "22929d70-f4d9-4c0a-adb3-bcae0b5dba0f"
+          ],
+          "failures": [
+            "518d3b33-a16d-4b89-83a7-0a7130150b9a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10824,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

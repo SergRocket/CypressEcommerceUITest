@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-23T16:17:04.219Z",
+    "end": "2024-09-23T16:17:16.827Z",
+    "duration": 12608,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "10f4b122-8673-4c9e-8b31-453f591b066f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mainPageTests.cy.js",
+      "file": "cypress\\e2e\\mainPageTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e5d08d2-3a50-41ac-8edc-8976cea6a16f",
+          "title": "Verify critical elements are present, add item to bucket, and add to fav",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify critical elements are present, add item to bucket, and add to fav",
+              "fullTitle": "Verify critical elements are present, add item to bucket, and add to fav Verify critical elements are present, add item to bucket, and add to fav",
+              "timedOut": null,
+              "duration": 7018,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "mainPage.checkForElementsVisability();\nmainPage.addToBucketTest();\nmainPage.addToFavorite();",
+              "err": {},
+              "uuid": "136117da-ef21-4c3d-8e0a-08d887495211",
+              "parentUUID": "7e5d08d2-3a50-41ac-8edc-8976cea6a16f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "136117da-ef21-4c3d-8e0a-08d887495211"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7018,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0cc08201-5ad6-4327-ac43-33f73705a06a",
+          "title": "Verify filter panel, visibility, and functionality of slider filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify filter panel, visibility and functionality of slider filter",
+              "fullTitle": "Verify filter panel, visibility, and functionality of slider filter Verify filter panel, visibility and functionality of slider filter",
+              "timedOut": null,
+              "duration": 5308,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "mainPage.openCloseFilterPanelVerifyPosition();\nthis.sliderParams.forEach(sliderParam => {\n  mainPage.openFilterPanelVerifySliderFiltering(sliderParam.style, sliderParam.styleOnlyLeft, sliderParam.styleOnlyRight);\n});\nmainPage.closeAllFilters();\nmainPage.checkAlertForPhoneCall();",
+              "err": {},
+              "uuid": "da628b85-0600-44f8-aee5-a84d19950955",
+              "parentUUID": "0cc08201-5ad6-4327-ac43-33f73705a06a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da628b85-0600-44f8-aee5-a84d19950955"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5308,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

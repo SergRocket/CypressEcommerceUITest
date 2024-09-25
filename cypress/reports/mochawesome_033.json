@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-20T17:08:32.110Z",
+    "end": "2024-09-20T17:09:23.116Z",
+    "duration": 51006,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6583e50e-60de-47b4-a896-8bc1a178f8dd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\productPagesTests.cy.js",
+      "file": "cypress\\e2e\\productPagesTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4e07dcc-81d7-43c5-a1a2-73c69d3b4be1",
+          "title": "Tests for user login and add item to the bucket",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search for product and click it, verify elements and url",
+              "fullTitle": "Tests for user login and add item to the bucket search for product and click it, verify elements and url",
+              "timedOut": null,
+              "duration": 50896,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.searchQueries.forEach(searchQuery => {\n  searchPage.validSearchQuery(searchQuery.value);\n  productPage.openProductPage(searchQuery.value);\n  productPage.verifyElementsAreShownCorrectly(searchQuery.value);\n  productPage.verifyPricePresentCorrectly();\n  productPage.verifyProductIdSameInTitleAndUrl(searchQuery.value);\n});",
+              "err": {},
+              "uuid": "e1347028-367d-4a68-bac7-d83d22922e3e",
+              "parentUUID": "d4e07dcc-81d7-43c5-a1a2-73c69d3b4be1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e1347028-367d-4a68-bac7-d83d22922e3e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 50896,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

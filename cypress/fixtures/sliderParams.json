@@ -1,0 +1,5 @@
+[
+    { "style": "left: 25%; width: 45%;", "styleOnlyLeft": "left: 25%", "styleOnlyRight": "left: 75%;" },
+    { "style": "left: 30%; width: 40%;", "styleOnlyLeft": "left: 30%", "styleOnlyRight": "left: 60%;" },
+    { "style": "left: 35%; width: 30%;", "styleOnlyLeft": "left: 35%", "styleOnlyRight": "left: 65%;" }
+]

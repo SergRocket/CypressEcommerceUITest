@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-15T12:33:49.540Z",
+    "end": "2024-09-15T12:34:12.545Z",
+    "duration": 23005,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "75a3f434-8b9f-4277-90d7-2fcf6adcf3fc",
+      "title": "",
+      "fullFile": "cypress/e2e/userTests.cy.js",
+      "file": "cypress/e2e/userTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "19454de8-6571-474c-8950-c8ffba5f480f",
+          "title": "Tests for user login and add item to the bucket",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User main page and bucket tests",
+              "fullTitle": "Tests for user login and add item to the bucket User main page and bucket tests",
+              "timedOut": null,
+              "duration": 7773,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "mainPage.checkForElementsVisability();\nmainPage.addToBucketButton();",
+              "err": {},
+              "uuid": "49528cd9-b80c-4698-b9ba-e73efc6e0957",
+              "parentUUID": "19454de8-6571-474c-8950-c8ffba5f480f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User login tests",
+              "fullTitle": "Tests for user login and add item to the bucket User login tests",
+              "timedOut": null,
+              "duration": 7084,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.loginToAccount();",
+              "err": {},
+              "uuid": "eec30332-c5aa-4d7d-a4fa-d4c63da8be3e",
+              "parentUUID": "19454de8-6571-474c-8950-c8ffba5f480f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user logout test",
+              "fullTitle": "Tests for user login and add item to the bucket user logout test",
+              "timedOut": null,
+              "duration": 8021,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.logoutFromAccount();",
+              "err": {},
+              "uuid": "c7e07e97-b0f8-4f5a-859b-bfbc9ca89479",
+              "parentUUID": "19454de8-6571-474c-8950-c8ffba5f480f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "49528cd9-b80c-4698-b9ba-e73efc6e0957",
+            "eec30332-c5aa-4d7d-a4fa-d4c63da8be3e",
+            "c7e07e97-b0f8-4f5a-859b-bfbc9ca89479"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22878,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

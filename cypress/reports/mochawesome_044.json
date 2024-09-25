@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-23T12:06:54.527Z",
+    "end": "2024-09-23T12:07:11.239Z",
+    "duration": 16712,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1e972c3a-534b-46cf-8e33-cf7bd88f5438",
+      "title": "",
+      "fullFile": "cypress\\e2e\\productCardstests.cy.js",
+      "file": "cypress\\e2e\\productCardstests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0cb4ef5f-f643-499e-a7d3-fc3ce6cb5afb",
+          "title": "Tests for user invalid and valid search requests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid user search tests verification",
+              "fullTitle": "Tests for user invalid and valid search requests Valid user search tests verification",
+              "timedOut": null,
+              "duration": 10467,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.searchQueries.forEach(searchQuery => {\n  searchPage.validSearchQuery(searchQuery.value);\n});",
+              "err": {},
+              "uuid": "e664ede8-652a-4ab5-9687-997cb44e8d5f",
+              "parentUUID": "0cb4ef5f-f643-499e-a7d3-fc3ce6cb5afb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Invalid user search tests verification",
+              "fullTitle": "Tests for user invalid and valid search requests Invalid user search tests verification",
+              "timedOut": null,
+              "duration": 6128,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "searchPage.invalidSearch();",
+              "err": {},
+              "uuid": "616ebf68-a8b0-4c73-83ca-9edd0f235015",
+              "parentUUID": "0cb4ef5f-f643-499e-a7d3-fc3ce6cb5afb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e664ede8-652a-4ab5-9687-997cb44e8d5f",
+            "616ebf68-a8b0-4c73-83ca-9edd0f235015"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16595,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

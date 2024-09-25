@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-23T16:26:36.311Z",
+    "end": "2024-09-23T16:27:09.589Z",
+    "duration": 33278,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "10fda373-73c8-4ee6-a0fd-ae8239b9fba0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\userTests.cy.js",
+      "file": "cypress\\e2e\\userTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d56bb19e-8b7c-4ea5-b8c5-592f67c5fb24",
+          "title": "Tests for user login/logout and add item to the bucket",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User login verification positive",
+              "fullTitle": "Tests for user login/logout and add item to the bucket User login verification positive",
+              "timedOut": null,
+              "duration": 9608,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.loginToAccount();",
+              "err": {},
+              "uuid": "fbe78d48-4593-48ff-8146-4d389e33ae89",
+              "parentUUID": "d56bb19e-8b7c-4ea5-b8c5-592f67c5fb24",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User logout verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket User logout verification",
+              "timedOut": null,
+              "duration": 9182,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.logoutFromAccount();",
+              "err": {},
+              "uuid": "f766b15a-be86-439f-933a-677b44da1758",
+              "parentUUID": "d56bb19e-8b7c-4ea5-b8c5-592f67c5fb24",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Contact info verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Contact info verification",
+              "timedOut": null,
+              "duration": 1883,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.vefiryTelValueOnMainPage();\naccountPage.vefirySckedulerValuesOnMainPage();",
+              "err": {},
+              "uuid": "40b0ff00-de19-4c88-b743-9ec4a48bde72",
+              "parentUUID": "d56bb19e-8b7c-4ea5-b8c5-592f67c5fb24",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Prices values and currency test verification",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Prices values and currency test verification",
+              "timedOut": null,
+              "duration": 6621,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.verfiyOldPriceValues();\naccountPage.verfiyNewPriceValues();\naccountPage.verfiyOldAndNewPriceValues();",
+              "err": {},
+              "uuid": "ff23dd3f-bf05-4f4a-86ac-aab43f1d0d66",
+              "parentUUID": "d56bb19e-8b7c-4ea5-b8c5-592f67c5fb24",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sorting verification tests",
+              "fullTitle": "Tests for user login/logout and add item to the bucket Sorting verification tests",
+              "timedOut": null,
+              "duration": 5519,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "accountPage.sortingSelection();\naccountPage.selectRandomSortingOption();",
+              "err": {},
+              "uuid": "63eaf698-d346-4ed6-bcc6-aaf44377dd3a",
+              "parentUUID": "d56bb19e-8b7c-4ea5-b8c5-592f67c5fb24",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fbe78d48-4593-48ff-8146-4d389e33ae89",
+            "f766b15a-be86-439f-933a-677b44da1758",
+            "40b0ff00-de19-4c88-b743-9ec4a48bde72",
+            "ff23dd3f-bf05-4f4a-86ac-aab43f1d0d66",
+            "63eaf698-d346-4ed6-bcc6-aaf44377dd3a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 32813,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

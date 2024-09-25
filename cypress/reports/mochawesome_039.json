@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-20T17:26:45.430Z",
+    "end": "2024-09-20T17:26:51.946Z",
+    "duration": 6516,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "96b617b9-9832-4bae-86d1-fce1b23477b4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mainPageTests.cy.js",
+      "file": "cypress\\e2e\\mainPageTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e4fd3be-e42a-4dac-9cc2-2e8c156bc09b",
+          "title": "Data-Driven Testing with Fixtures",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "main page tests",
+              "fullTitle": "Data-Driven Testing with Fixtures main page tests",
+              "timedOut": null,
+              "duration": 6384,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "mainPage.checkForElementsVisability();\nmainPage.addToBucketTest();\nmainPage.addToFavorite();",
+              "err": {},
+              "uuid": "e266f4e3-0002-4eca-b817-c8fb2c4cf2ca",
+              "parentUUID": "7e4fd3be-e42a-4dac-9cc2-2e8c156bc09b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e266f4e3-0002-4eca-b817-c8fb2c4cf2ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6384,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
